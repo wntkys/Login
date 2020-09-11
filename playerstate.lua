@@ -33,7 +33,7 @@ function cPlayerState:new(a_Player, a_IsLoggedIn)
 		local World = a_Player:GetWorld()
 		Obj:DoWithPlayer(
 			function(a_Player)
-				a_Player:TeleportToCoords(World:GetSpawnX(), World:GetSpawnY(), World:GetSpawnZ())
+				a_Player:TeleportToCoords(World:GetSpawnX(), 25565, World:GetSpawnZ())
 				Obj.m_Teleporting = true;
 			end
 		)
